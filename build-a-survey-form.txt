@@ -1,0 +1,149 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Sejal's Hairstyling Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Sejal's Hairstyling Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve my course</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <main>
+    <fieldset>
+      <div class="survey">
+    <label 
+    id="name-label">Name <input id="name" name="nname" type="text" placeholder="Enter your name" required/ >
+    </label>
+    </div>
+    <div class="survey">
+    <label 
+    id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+    </label>
+    </div>
+    <div class="survey">
+    <label id="number-label">
+      Age (optional) <input id="number" name="age" type="number" min="13" max="120"placeholder="Enter your age"  />
+    </label>
+    </div>
+    </fieldset>
+    <fieldset>
+      <label for="referrer">Which one are you most interested in?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Hairstyling</option>
+            <option value="2">Makeup & Beauty</option>
+            <option value="3">Skincare & Dressing</option>
+            <option value="4">Others</option>
+          </select>
+        </label>
+        </label>
+        <label class="place"for="bio"> What did you like the most about this course?<textarea id="bio" name="bio" rows="2" cols="20" placeholder="I like the most about..."></textarea>
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to see improved?(Select all that apply)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" value="option2" name="account-type" class="inline" /> Course Structure</label>
+        <label for="personal-account"><input id="personal-account" type="radio" value="option1" name="account-type" class="inline" /> Timings</label>
+        <label for="personal-account"><input id="personal-account" type="checkbox" value="option3" name="account-type" class="inline" /> Teaching Style</label>
+        <label for="personal-account"><input id="personal-account" type="checkbox" value="option4" name="account-type" class="inline" /> Fees</label>
+        <label for="personal-account"><input id="personal-account" type="checkbox" value="option5" name="account-type" class="inline" /> Online availability</label>
+        <label for="personal-account"><input id="personal-account" type="checkbox" value="option6" name="account-type" class="inline" /> Other courses included</label>
+        <label for="personal-account"><input id="personal-account" type="checkbox" value="option7" name="account-type" class="inline" /> Mentorship</label>
+        <label class="place"for="bio"> Any comments or suggestions?<textarea id="bio" name="bio" rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </fieldset>
+    </main>
+    </form>
+    </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.pexels.com/photos/973403/pexels-photo-973403.jpeg);
+  background-size: cover;
+}
+
+.survey {
+  margin-bottom: 15px;
+}
+
+.survey label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.survey input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+form{
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 0em;
+  background-color: white;
+  opacity: 83%;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+input,
+textarea,
+select {
+  margin: 15px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+select {
+  margin-top: 10px;
+  margin-bottom: 12px; 
+}
+
+textarea {
+  margin-bottom: 12px; 
+  margin-top: 10px
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 1em;
+  font-size: 1.1rem;
+  background-color: white;
+  border-color: white;
+  min-width: 300px;
+}
+
+** end of undefined **
+
